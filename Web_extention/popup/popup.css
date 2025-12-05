@@ -1,0 +1,16 @@
+/* popup/popup.css */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  width: 360px;
+  margin: 0;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.wrap h2 { margin: 0 0 8px 0; font-size: 16px; }
+label.row { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+textarea { width: 100%; box-sizing: border-box; font-family: monospace; }
+.buttons { margin-top:6px; }
+button { margin: 4px 6px 4px 0; padding:6px 8px; }
+.small-ops { margin-top:8px; }
+.status { margin-top:10px; font-size:12px; color:#444; }
+#preview { margin-top:8px; font-size:12px; max-height:120px; overflow:auto; background:#fafafa; padding:6px; }

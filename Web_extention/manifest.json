@@ -1,0 +1,28 @@
+
+
+{
+  "manifest_version": 3,
+  "name": "Minimal URL Recorder",
+  "version": "0.1.0",
+  "description": "Record active tab URLs (with base-URL filtering) and export CSV.",
+  "icons": {
+    "16": "icons/beans.png",
+    "48": "icons/beans.png",
+    "128": "icons/beans.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/beans.png"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
+

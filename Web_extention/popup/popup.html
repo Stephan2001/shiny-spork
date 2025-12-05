@@ -1,0 +1,47 @@
+<!-- popup/popup.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>URL Recorder</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h2>Minimal URL Recorder</h2>
+
+    <label class="row">
+      <input id="toggleActive" type="checkbox" />
+      <span>Recording active</span>
+    </label>
+
+    <div>
+      <label>Base URLs (one per line). Leave empty to match all:</label>
+      <textarea id="baseUrls" rows="4" placeholder="https://example.com/"></textarea>
+      <div class="buttons">
+        <button id="saveBase">Save</button>
+      </div>
+    </div>
+
+    <div class="small-ops">
+      <button id="useWindow">Use current window</button>
+      <button id="useTab">Use current tab</button>
+      <button id="clearTargets">Clear window/tab restriction</button>
+    </div>
+
+    <div class="small-ops">
+      <button id="exportCsv">Export CSV</button>
+      <button id="clearEntries">Clear entries</button>
+    </div>
+
+    <div class="status">
+      <small id="statusText">Loading…</small>
+      <div>Recorded: <span id="count">0</span></div>
+    </div>
+    <div id="preview"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
